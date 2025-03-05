@@ -62,8 +62,17 @@ h2 {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: 2px solid #64ffda;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 150px; /* Slightly smaller on mobile */
+        height: 150px;
+    }
 }
