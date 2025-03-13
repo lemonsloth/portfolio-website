@@ -226,4 +226,5 @@ footer {
     height: 150px;
     border-radius: 50%;
     border: 2px solid #64ffda;
+    background-image: url('images/profile-pic.jpg');
 }
