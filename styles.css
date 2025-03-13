@@ -161,6 +161,7 @@ h2 {
     transition: var(--transition);
 }
 
+<<<<<<< HEAD
 .cta-button:hover {
     background-color: rgba(100, 255, 218, 0.1);
 }
@@ -219,4 +220,10 @@ footer {
     h2 {
         font-size: 30px;
     }
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #64ffda;
 }
