@@ -167,70 +167,77 @@ h2 {
 }
 
 /* Footer */
-
 .contact-section {
+    padding: 80px 0;
+    background-color: var(--navy); /* Slightly lighter background for contrast */
+    position: relative;
+    min-height: 60vh; /* Makes it substantial but not full screen */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.contact-inner {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 100px 0;
-    max-width: 600px;
-    text-align: center;
+    padding: 0 50px;
+    width: 100%;
 }
 
 .section-title {
     font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     color: var(--lightest-slate);
-    position: relative;
     display: flex;
-    align-items: center;
-    width: 100%;
-    white-space: nowrap;
+    align-items: baseline;
 }
 
-.accent-number {
+.section-number {
     color: var(--green);
     font-family: var(--font-mono);
-    font-size: 22px;
-    font-weight: normal;
+    font-size: 20px;
     margin-right: 10px;
 }
 
 .contact-container {
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--light-navy);
+    padding: 40px;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
 
-.contact-content h3 {
+.contact-text h3 {
     color: var(--lightest-slate);
-    font-size: 50px;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 15px;
 }
 
-.contact-content p {
-    color: var(--slate);
+.contact-text p {
+    color: var(--light-slate);
     font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 50px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.contact-cta {
+    margin: 20px 0 40px;
 }
 
 .contact-button {
-    margin-top: 20px;
-    padding: 15px 28px;
-    font-size: 16px;
-    border: 1px solid var(--green);
-    border-radius: 4px;
     background-color: transparent;
     color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    padding: 15px 28px;
     font-family: var(--font-mono);
+    font-size: 16px;
     text-decoration: none;
     transition: var(--transition);
     display: inline-flex;
     align-items: center;
-    justify-content: center;
 }
 
 .contact-button:hover {
@@ -242,34 +249,43 @@ h2 {
     margin-left: 10px;
 }
 
+.social-container {
+    width: 100%;
+    border-top: 1px solid var(--lightest-navy);
+    padding-top: 30px;
+    margin-top: 10px;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    gap: 30px;
 }
 
 .social-links a {
     color: var(--light-slate);
-    font-size: 22px;
-    margin: 0 15px;
-    padding: 10px;
-    border-radius: 50%;
+    font-size: 24px;
     transition: var(--transition);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .social-links a:hover {
     color: var(--green);
     transform: translateY(-3px);
-    background-color: rgba(100, 255, 218, 0.05);
+    background-color: var(--navy);
 }
 
 
-/* Add animation to the contact section */
-@keyframes fadeUp {
+/* Scroll Animation */
+@keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -277,24 +293,13 @@ h2 {
     }
 }
 
-.contact-section {
-    animation: fadeUp 0.5s ease-out forwards;
+.contact-container {
+    opacity: 0;
+    transform: translateY(30px);
 }
 
-/* Add hover effects to social icons */
-.social-links a:hover {
-    box-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .contact-content h3 {
-        font-size: 36px;
-    }
-    
-    .contact-content p {
-        font-size: 16px;
-    }
+.contact-container.visible {
+    animation: fadeInUp 0.6s ease forwards;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
