@@ -167,28 +167,135 @@ h2 {
 }
 
 /* Footer */
-footer {
-    padding: 20px 0;
-    margin-top: auto;
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 600px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--lightest-slate);
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.accent-number {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: 22px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.contact-container {
+    margin-bottom: 50px;
+}
+
+.contact-content h3 {
+    color: var(--lightest-slate);
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    color: var(--slate);
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.contact-button {
+    margin-top: 20px;
+    padding: 15px 28px;
+    font-size: 16px;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--green);
+    font-family: var(--font-mono);
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-button:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    transform: translateY(-3px);
+}
+
+.contact-button i {
+    margin-left: 10px;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .social-links a {
     color: var(--light-slate);
     font-size: 22px;
-    margin: 0 10px;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 50%;
     transition: var(--transition);
 }
 
 .social-links a:hover {
     color: var(--green);
     transform: translateY(-3px);
+    background-color: rgba(100, 255, 218, 0.05);
 }
 
+
+/* Add animation to the contact section */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-section {
+    animation: fadeUp 0.5s ease-out forwards;
+}
+
+/* Add hover effects to social icons */
+.social-links a:hover {
+    box-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-content h3 {
+        font-size: 36px;
+    }
+    
+    .contact-content p {
+        font-size: 16px;
+    }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
