@@ -78,7 +78,7 @@ nav ul li a:hover {
     color: var(--green);
 }
 
-.resume-btn {
+.project-btn {
     color: var(--green);
     background-color: transparent;
     border: 1px solid var(--green);
@@ -88,7 +88,7 @@ nav ul li a:hover {
     transition: var(--transition);
 }
 
-.resume-btn:hover {
+.project-btn:hover {
     background-color: rgba(100, 255, 218, 0.1);
 }
 
