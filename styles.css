@@ -78,7 +78,7 @@ nav ul li a:hover {
     color: var(--green);
 }
 
-.resume-btn {
+.project-btn {
     color: var(--green);
     background-color: transparent;
     border: 1px solid var(--green);
@@ -88,7 +88,7 @@ nav ul li a:hover {
     transition: var(--transition);
 }
 
-.resume-btn:hover {
+.project-btn:hover {
     background-color: rgba(100, 255, 218, 0.1);
 }
 
@@ -167,28 +167,140 @@ h2 {
 }
 
 /* Footer */
-footer {
-    padding: 20px 0;
-    margin-top: auto;
+.contact-section {
+    padding: 80px 0;
+    background-color: var(--navy); /* Slightly lighter background for contrast */
+    position: relative;
+    min-height: 60vh; /* Makes it substantial but not full screen */
+    display: flex;
+    align-items: center;
+}
+
+.contact-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: var(--lightest-slate);
+    display: flex;
+    align-items: baseline;
+}
+
+.section-number {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--light-navy);
+    padding: 40px;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.contact-text h3 {
+    color: var(--lightest-slate);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-text p {
+    color: var(--light-slate);
+    font-size: 18px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.contact-cta {
+    margin: 20px 0 40px;
+}
+
+.contact-button {
+    background-color: transparent;
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    padding: 15px 28px;
+    font-family: var(--font-mono);
+    font-size: 16px;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-button:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    transform: translateY(-3px);
+}
+
+.contact-button i {
+    margin-left: 10px;
+}
+
+.social-container {
+    width: 100%;
+    border-top: 1px solid var(--lightest-navy);
+    padding-top: 30px;
+    margin-top: 10px;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 .social-links a {
     color: var(--light-slate);
-    font-size: 22px;
-    margin: 0 10px;
+    font-size: 24px;
     transition: var(--transition);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .social-links a:hover {
     color: var(--green);
     transform: translateY(-3px);
+    background-color: var(--navy);
 }
 
+
+/* Scroll Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-container {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.contact-container.visible {
+    animation: fadeInUp 0.6s ease forwards;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
