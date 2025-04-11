@@ -111,7 +111,7 @@ nav ul li a:hover {
     height: 120px;
     border-radius: 50%;
     background-color: transparent;
-    background-image: url('images/profile-pic.jpg');
+    background-image: url('assets/images/profile-pic.jpg');
     background-size: cover;
     background-position: center;
     border: 2px solid var(--green);
