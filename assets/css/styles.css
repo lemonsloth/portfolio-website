@@ -417,6 +417,23 @@ h2 {
     transition: var(--transition);
 }
 
+.project-card ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.project-card ul li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.project-card ul li:before {
+    content: "▹";
+    color: var(--green);
+    position: absolute;
+    left: -20px;
+}
+
 .project-links a:hover {
     color: var(--green);
 }
