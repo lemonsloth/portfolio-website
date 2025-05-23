@@ -1,5 +1,6 @@
 :root {
     --dark-navy: #0a192f;
+    --darkest-navy: #020c1b;
     --navy: #112240;
     --light-navy: #172a45;
     --lightest-navy: #303C55;
@@ -41,8 +42,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 15px 40px;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--darkest-navy); /* Prevents transparency when scrolling */
 }
 
 .logo-icon {
@@ -95,20 +100,21 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    min-height: calc(100vh - 200px);
-    margin-top: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 400px);
+    margin-top: 10px;
 }
 
 .profile-pic-container {
-    margin-bottom: 30px;
+    margin-bottom: 300px;
+    margin-left: 0px;
 }
 
 .profile-pic { 
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: transparent;
     background-image: url('../images/profile-pic.jpg');
@@ -168,7 +174,7 @@ h2 {
 
 /* Footer */
 .contact-section {
-    padding: 80px 0;
+    padding: 30px 0;
     background-color: var(--navy); /* Slightly lighter background for contrast */
     position: relative;
     min-height: 60vh; /* Makes it substantial but not full screen */
@@ -177,25 +183,17 @@ h2 {
 }
 
 .contact-inner {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 50px;
     width: 100%;
 }
 
 .section-title {
-    font-size: 32px;
-    margin-bottom: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
     color: var(--lightest-slate);
-    display: flex;
-    align-items: baseline;
-}
-
-.section-number {
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: 20px;
-    margin-right: 10px;
 }
 
 .contact-container {
@@ -218,15 +216,21 @@ h2 {
 .contact-text p {
     color: var(--light-slate);
     font-size: 18px;
-    max-width: 500px;
-    margin: 0 auto 30px;
+    text-align: center;
 }
 
-.contact-cta {
+.contact-cta
+{
     margin: 20px 0 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-button {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    gap: 12px; /* space between text and icon */
     background-color: transparent;
     color: var(--green);
     border: 1px solid var(--green);
@@ -236,8 +240,6 @@ h2 {
     font-size: 16px;
     text-decoration: none;
     transition: var(--transition);
-    display: inline-flex;
-    align-items: center;
 }
 
 .contact-button:hover {

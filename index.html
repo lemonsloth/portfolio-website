@@ -8,28 +8,27 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
+
+<header>
+    <div class="logo">
+        <a href="#"><div class="logo-icon"></div></a>
+    </div>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="https://github.com/lemonsloth" class="project-btn">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
 <body>
     <div class="container">
-        <header>
-            <div class="logo">
-                <a href="#"><div class="logo-icon"></div></a>
-            </div>
-            <!-- Navigation bar -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="https://github.com/lemonsloth" class="project-btn">Projects</a></li>
-                </ul>
-            </nav>
-        </header>
-
         <main>
             <section class="hero">
-                <div class="profile-pic-container">
-                    <div class="profile-pic"></div>
-                </div>
+                
                 <div class="intro">
                     <p class="greeting">Hi, my name is</p>
                     <h1>Caleb Rollf.</h1>
@@ -38,6 +37,9 @@
                     <div class="cta">
                         <a href="https://github.com/lemonsloth" target="_blank" class="cta-button"><i class="fab fa-github"></i> Check out my work!</a>
                     </div>
+                </div>
+                <div class="profile-pic-container">
+                    <div class="profile-pic"></div>
                 </div>
             </section>
 
@@ -97,27 +99,29 @@
             
         </main>
 
-	<section id="contact" class="contact-section">
-    		<div class="contact-inner">
-        		<h2 class="section-title"> Let's connect! </h2>
+    </div>
+    <section id="contact" class="contact-section">
+                <div class="contact-inner">
+                    <h2 class="section-title">Get in Touch</h2>
                     <div class="contact-text">
                         <p>I'm currently exploring new opportunities in embedded systems and computer engineering.</p>
                     </div>
             
-            		<div class="contact-cta">
-                		<a href="mailto:caleb.rollf@gmail.com" class="contact-button">Say Hello <i class="fas fa-paper-plane"></i></a>
-            		</div>
+                    <div class="contact-cta">
+                        <a href="mailto:caleb.rollf@gmail.com" class="contact-button">
+                            <span>Say Hello</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
             
-            		<div class="social-container">
-                		<div class="social-links">
-                    			<a href="https://github.com/lemonsloth" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                    			<a href="https://linkedin.com/in/caleb-rollf" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                		</div>
-            		</div>
-    		</div>
-	</section>
-    </div>
-
+                    <div class="social-container">
+                        <div class="social-links">
+                                <a href="https://github.com/lemonsloth" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://linkedin.com/in/caleb-rollf" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
