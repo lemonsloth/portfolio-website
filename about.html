@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Caleb Rollf - Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/about.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
+
+<header>
+    <div class="logo">
+        <a href="index.html" style="color:#64ffda">
+            <div class="logo-icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+        </a>
+    </div>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="https://github.com/lemonsloth" class="project-btn">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
 <body>
     <div class="container">        
-        <header>
-            <div class="logo">
-                <a href="#"><div class="logo-icon"></div></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="projects.html"class="project-btn">Projects</a></li>
-                </ul>
-            </nav>
-        </header>
+        
         <main>
             <section class="about-page">
                 <h1>About Me</h1>
@@ -61,37 +68,30 @@
                 </div>
             </section>
         </main>
-
-	<section id="contact" class="contact-section">
-    		<div class="contact-inner">
-        		<h2 class="section-title"><span class="section-number">04.</span> Get In Touch</h2>
-       			<div class="contact-container">
-            			<div class="contact-text">
-                			<h3>Let's connect!</h3>
-                			<p>I'm currently exploring new opportunities in embedded systems and computer engineering.</p>
-            			</div>
-            
-            		<div class="contact-cta">
-                		<a href="mailto:caleb.rollf@gmail.com" class="contact-button">
-                    Say Hello <i class="fas fa-paper-plane"></i>
-                		</a>
-            		</div>
-            
-            		<div class="social-container">
-                		<div class="social-links">
-                    			<a href="https://github.com/lemonsloth" aria-label="GitHub" target="_blank">
-                        			<i class="fab fa-github"></i>
-                    			</a>
-                    			<a href="https://linkedin.com/in/caleb-rollf" aria-label="LinkedIn" target="_blank">
-                        			<i class="fab fa-linkedin-in"></i>
-                    			</a>
-                		</div>
-            		</div>
-        		</div>
-    		</div>
-	</section>
-
     </div>
+
+    <section id="contact" class="contact-section">
+                <div class="contact-inner">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="contact-text">
+                        <p>I'm currently exploring new opportunities in embedded systems and computer engineering.</p>
+                    </div>
+            
+                    <div class="contact-cta">
+                        <a href="mailto:caleb.rollf@gmail.com" class="contact-button">
+                            <span>Say Hello</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+            
+                    <div class="social-container">
+                        <div class="social-links">
+                                <a href="https://github.com/lemonsloth" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://linkedin.com/in/caleb-rollf" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

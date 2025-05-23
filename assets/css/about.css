@@ -1,0 +1,139 @@
+/* About Section Container */
+.about-page {
+    padding: 60px 0 40px 0;
+}
+
+.about-page h1 {
+    text-align: left;
+    color: var(--lightest-slate);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Main About Content */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--light-navy);
+    border-radius: 4px;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    padding: 40px 32px;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 0;
+}
+
+.about-text h2 {
+    color: var(--green);
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-family: var(--font-mono);
+}
+
+.about-text p {
+    margin-bottom: 18px;
+    color: var(--light-slate);
+    font-size: 18px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: var(--navy);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--green);
+    font-family: var(--font-mono);
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.education-item {
+    background: var(--navy);
+    border-radius: 4px;
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.education-item h3 {
+    color: var(--lightest-slate);
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.education-item .institution {
+    color: var(--green);
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-family: var(--font-mono);
+}
+
+.education-item .date {
+    color: var(--light-slate);
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.about-pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-pic .wrapper {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: var(--navy);
+    padding: 8px;
+}
+
+.about-pic img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 2px solid var(--green);
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        padding: 24px 8px;
+    }
+    .about-pic {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .about-text {
+        text-align: center;
+    }
+    .about-page h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+}
