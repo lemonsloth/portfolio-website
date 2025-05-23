@@ -12,6 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.contact-container').forEach(container => {
         observer.observe(container);
     });
+
+    // Resume download confirmation
+    const resumeLink = document.getElementById('resume-link');
+    if (resumeLink) {
+        resumeLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (confirm('Would you like to download my resume PDF?')) {
+                window.location.href = this.href;
+            }
+        });
+    }
     
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
