@@ -287,7 +287,7 @@ h2 {
     font-size: 30px;
     color: var(--lightest-slate);
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .experience-item {
@@ -295,6 +295,7 @@ h2 {
     padding: 20px;
     background-color: var(--light-navy);
     border-radius: 4px;
+    transition: var(--transition);
 }
 
 .experience-item h2 {
@@ -345,6 +346,86 @@ a.experience-item:hover
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
 
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+/* Project section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--light-navy);
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+a.project-card
+{
+    text-decoration: none;  /* Remove underline*/
+    color: inherit;
+    display: block;         /* Make entire card clickable */
+}
+
+a.project-card:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.project-tech-stack {
+    color: var(--green);
+    font-family: var(--font-mono);
+    margin-bottom: 5px;
+}
+
+.project-card h2 {
+    font-size: 22px;
+    color: var(--lightest-slate);
+    margin-bottom: 25px;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}
+
+.project-links a {
+    color: var(--light-slate);
+    font-size: 24px;
+    margin-right: 15px;
+    transition: var(--transition);
+}
+
+.project-card ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.project-card ul li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.project-card ul li:before {
+    content: "▹";
+    color: var(--green);
+    position: absolute;
+    left: -20px;
+}
+
 /* Resume Page */
 .resume-page {
     padding: 80px 0;
@@ -389,86 +470,6 @@ a.experience-item:hover
     font-size: 14px;
 }
 
-/* Project section */
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.project-card {
-    background-color: var(--light-navy);
-    padding: 15px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-a.project-card
-{
-    text-decoration: none;  /* Remove underline*/
-    color: inherit;
-    display: block;         /* Make entire card clickable */
-}
-
-a.project-card:hover
-{
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-}
-
-.project-tech-stack {
-    color: var(--green);
-    font-family: var(--font-mono);
-    margin-bottom: 5px;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-}
-
-.project-card h2 {
-    font-size: 22px;
-    color: var(--lightest-slate);
-    margin-bottom: 25px;
-}
-
-.project-card p {
-    margin-bottom: 10px;
-}
-
-.project-links a {
-    color: var(--light-slate);
-    font-size: 24px;
-    margin-right: 15px;
-    transition: var(--transition);
-}
-
-.project-card ul {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.project-card ul li {
-    position: relative;
-    margin-bottom: 10px;
-}
-
-.project-card ul li:before {
-    content: "▹";
-    color: var(--green);
-    position: absolute;
-    left: -20px;
-}
-
-.project-links a:hover 
-{
-    color: var(--green);
-}
 
 /* Scroll Animation */
 @keyframes fadeInUp {
