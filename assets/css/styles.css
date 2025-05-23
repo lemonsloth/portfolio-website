@@ -280,15 +280,6 @@ h2 {
     background-color: var(--navy);
 }
 
-/* Experience Page */
-.experience-page {
-    padding: 80px 0;
-}
-
-.experience-page h1 {
-    margin-bottom: 40px;
-}
-
 .experience-item {
     margin-bottom: 40px;
     padding: 20px;
