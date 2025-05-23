@@ -287,6 +287,13 @@ h2 {
     border-radius: 4px;
 }
 
+.experience-item h1 {
+    font-size: 30px;
+    color: var(--lightest-slate);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .experience-item h2 {
     font-size: 24px;
     color: var(--lightest-slate);
