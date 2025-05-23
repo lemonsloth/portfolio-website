@@ -375,11 +375,6 @@ h2 {
     font-size: 14px;
 }
 
-/* Projects Page */
-.projects-page {
-    padding: 80px 0;
-}
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -388,9 +383,16 @@ h2 {
 
 .project-card {
     background-color: var(--light-navy);
-    padding: 25px;
+    padding: 15px;
     border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+}
+
+.project-tech-stack {
+            font-size: 0.9em;
+            color: #32324e; 
+            margin-bottom: 8px;
 }
 
 .project-card:hover {
@@ -470,3 +472,4 @@ h2 {
         font-size: 30px;
     }
 
+}
