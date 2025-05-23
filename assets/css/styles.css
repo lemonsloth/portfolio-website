@@ -55,11 +55,25 @@ header {
     height: 42px;
     border: 2px solid var(--green);
     border-radius: 4px;
+    display: flex;                /* Add this */
+    align-items: center;          /* Center vertically */
+    justify-content: center;      /* Center horizontally */
     transition: var(--transition);
+    background: transparent;
+}
+
+.logo-icon i.fa-solid.fa-house {
+    color: var(--green) !important;
+    font-size: 22px;              /* Adjust size as needed */
+    transition: color 0.2s;
 }
 
 .logo-icon:hover {
     background-color: rgba(100, 255, 218, 0.1);
+}
+
+.logo-icon:hover i.fas.fa-home {
+    color: var(--white);          /* Optional: change icon color on hover */
 }
 
 nav ul {
@@ -174,8 +188,8 @@ h2 {
 
 /* Footer */
 .contact-section {
-    padding: 30px 0;
-    background-color: var(--navy); /* Slightly lighter background for contrast */
+    padding: 0px 0;
+    background-color: var(--darkest-navy); /* Slightly lighter background for contrast */
     position: relative;
     min-height: 60vh; /* Makes it substantial but not full screen */
     display: flex;
@@ -514,15 +528,57 @@ a.project-card:hover
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 25px;
-    }
-    
-    h1 {
-        font-size: 40px;
-    }
-    
-    h2 {
-        font-size: 30px;
+        padding: 0 10px;
     }
 
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        min-height: unset;
+        margin-top: 30px;
+    }
+
+    .intro, .profile-pic-container {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px auto;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .project-card,
+    .experience-item {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .contact-container {
+        padding: 20px 5px;
+    }
+
+    .contact-button {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
 }
