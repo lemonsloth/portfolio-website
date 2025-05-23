@@ -389,6 +389,19 @@ h2 {
     margin-top: 30px;
 }
 
+a.project-card
+{
+    text-decoration: none;  /* Remove underline*/
+    color: inherit;
+    display: block;         /* Make entire card clickable */
+}
+
+a.project-card:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
 .project-tech-stack {
     color: var(--green);
     font-family: var(--font-mono);
@@ -434,9 +447,11 @@ h2 {
     left: -20px;
 }
 
-.project-links a:hover {
+.project-links a:hover 
+{
     color: var(--green);
 }
+
 /* Scroll Animation */
 @keyframes fadeInUp {
     from {
