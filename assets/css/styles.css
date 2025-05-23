@@ -106,12 +106,12 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-.profile-pic {
+.profile-pic { 
     width: 120px;
     height: 120px;
     border-radius: 50%;
     background-color: transparent;
-    background-image: url('images/profile-pic.jpg');
+    background-image: url('../images/profile-pic.jpg');
     background-size: cover;
     background-position: center;
     border: 2px solid var(--green);
