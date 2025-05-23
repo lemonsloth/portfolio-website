@@ -405,11 +405,11 @@ h2 {
 .project-card h2 {
     font-size: 22px;
     color: var(--lightest-slate);
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .project-card p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .project-links a {
