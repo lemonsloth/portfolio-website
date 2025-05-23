@@ -532,22 +532,28 @@ a.project-card:hover
     }
 
     .hero {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column-reverse;
+        align-items: flex-start;
         min-height: unset;
         margin-top: 30px;
     }
 
-    .intro, .profile-pic-container {
+    .intro
+    { 
         width: 100%;
         text-align: center;
         margin: 0;
     }
-
+    .profile-pic-container 
+    {
+        width: 100%;
+        text-align: left;
+        margin: 0 0 20px 0;
+    }
     .profile-pic {
         width: 100px;
         height: 100px;
-        margin: 0 auto 20px auto;
+        margin: 0 0 20px auto;
     }
 
     h1 {
