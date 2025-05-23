@@ -21,7 +21,7 @@
     <nav>
         <ul>
             <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
+            <li><a href="assets/resume.pdf" id="resume-link">Resume</a></li>
             <li><a href="https://github.com/lemonsloth" class="project-btn">Projects</a></li>
         </ul>
     </nav>
@@ -93,5 +93,13 @@
                 </div>
         </section>
     <script src="assets/js/script.js"></script>
+    <script>
+        document.getElementById('resume-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            if (confirm('Would you like to download my resume PDF?')) {
+                window.location.href = this.href;
+            }
+        });
+    </script>
 </body>
 </html>
