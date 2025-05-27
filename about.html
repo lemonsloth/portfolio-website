@@ -28,42 +28,69 @@
 </header>
 
 <body>
-    <div class="container">        
-        
+    <div class="container">
+        <section class="about-page">
+                <p class="greeting">Get to know me!</p>
+        </section>        
+
         <main>
-            <section class="about-page">
-                <h1>About Me</h1>
-                
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Hello! I'm Caleb, a computer engineer with a passion for embedded systems. My interest in engineering started back in high school when I began tinkering with Arduino boards — turns out building small robots taught me a lot about both hardware and software!</p>
-                        
-                        <p>Fast-forward to today, and I've had the privilege of working on various embedded systems projects that combine my interests in hardware design and low-level programming. My approach focuses on creating efficient, reliable systems that solve real-world problems.</p>
-                        
-                        <h2>My Skills</h2>
-                        <ul class="skills-list">
-                            <li>C/C++</li>
-                            <li>ARM Microcontrollers</li>
-                            <li>RTOS</li>
-                            <li>PCB Design</li>
-                            <li>Python</li>
-                            <li>IoT Protocols</li>
-                        </ul>
-                        
-                        <h2>Education</h2>
-                        <div class="education">
-                            <div class="education-item">
-                                <h3>Bachelor of Science in Computer Engineering</h3>
-                                <p class="institution">Your University</p>
-                                <p class="date">2019 - 2023</p>
-                                <p>Graduated with honors. Focused on embedded systems and digital signal processing.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-pic">
-                        <div class="wrapper">
-                            <img src="assets/images/about-pic.jpg" alt="Caleb Rollf" width="300" height="300">
-                        </div>
+            <section class="card">
+                <h2>About Me</h2>
+                <p></p>
+            </section>
+
+            <section class="card">
+                <h2>What I'm building next</h2>
+                <ul class="list"> 
+                    <li>A collision detection system for my old car. I'm using ultrasonic sensors to detect obstacles
+                        around my vehicle. I'm also planning on implementing a custom display that will indicate distance!
+                    </li>
+                    <li>A plant monitoring system and app. This collaborative Git project uses the STM NUCLEO and ESP-12E to 
+                        monitor a plant's soil moisture, temperature, and light level. Sensor data is transmitted to a web 
+                        server, where it's analyzed and visualized for the user. The system also sends push notifications 
+                        to alert the user whenever plant conditions are not ideal.
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>My current setup</h2>
+                <ul class="list">
+                    <li>Kernel: Linux 6.11.0-26-generic</li>
+                    <li>OS: Ubuntu 24.04.2 LTS</li>
+                    <li>Shell: zsh 5.9</li>
+                    <li>Desktop Env: Hyprland</li>
+                    <li>WM: sway</li>
+                    <li>Terminal: kitty</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Tools I enjoy</h2>
+                <ul class="list">
+                    <li>Neovim</li>
+                    <li>Visual Studio Code</li>
+                    <li>Git</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>My skills</h2>
+                <ul class="list">
+                    <li>C / C++</li>
+                    <li>AVR / ARM Microcontrollers</li>
+                    <li>Oscilloscope, Logic Analysis, Multimeter, Soldering</li>
+                    <li>UART / I2C / SPI / MQTT / RFID</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Education</h2>
+                <div class="education">
+                    <div class="education-item">
+                        <h3>B.S. in Computer Engineering</h3>
+                        <p class="institution">University of Nevada, Las Vegas</p>
+                        <p class="date">Expected: Spring 2026</p>
                     </div>
                 </div>
             </section>
